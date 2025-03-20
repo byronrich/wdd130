@@ -2,121 +2,63 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f0f0f0;
 }
 
 header {
-    background-color: #fff;
-    padding: 20px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.logo {
-    font-size: 2em;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-nav a {
-    text-decoration: none;
-    margin: 0 15px;
-    color: #333;
-    padding: 5px 10px;
-    border-radius: 3px;
-    transition: background-color 0.3s ease;
-}
-
-nav a:hover {
+    padding: 10px;
     background-color: #e0e0e0;
 }
 
+.url {
+    font-size: 0.8em;
+    margin-bottom: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.logo, .nav-links {
+    margin: 0 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
 main {
-    width: 90%;
-    max-width: 1200px;
+    width: 80%;
     margin: 20px auto;
     background-color: #fff;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
 }
 
-.image-scroller {
-    border: 1px solid #ddd;
-    padding: 20px;
+section {
+    margin-bottom: 20px;
+    border: 1px dashed #ccc;
+    padding: 10px;
 }
 
-.image-scroller h2 {
-    margin-top: 0;
-}
-
-.image-scroller .images {
+.images, .products {
     display: flex;
-    overflow-x: auto;
-    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.image-scroller .images div {
-    min-width: 200px;
-    height: 150px;
+.image, .product {
+    width: 150px;
+    height: 100px;
     background-color: #eee;
-    border: 1px solid #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.image-scroller .images div::after {
-    content: "View";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.image-scroller .images div:hover::after {
-    opacity: 1;
-}
-
-.product-gallery {
     border: 1px solid #ddd;
-    padding: 20px;
-}
-
-.product-gallery h2 {
-    margin-top: 0;
-}
-
-.product-gallery .products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
-}
-
-.product-gallery .products div {
-    height: 200px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px; /* Vertically center text */
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+    background-color: #e0e0e0;
     text-align: center;
+    padding: 10px;
 }
