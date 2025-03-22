@@ -19,7 +19,7 @@ h1, h2 {
 
 header {
     background-color: var(--secondary-color);
-    color: #fff;
+    color: #DEA47E;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -27,7 +27,7 @@ header {
 }
 
 header a {
-    color: #fff;
+    color: #9E6240;
     text-decoration: none;
     margin: 0 10px;
 }
