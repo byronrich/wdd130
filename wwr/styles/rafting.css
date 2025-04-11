@@ -114,6 +114,55 @@ header nav ul li a:hover {
   border-radius: 5px;
 }
 
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea, button {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+fieldset {
+  border: 1px solid var(--secondary-color);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+button {
+  background-color: var(--accent1-color);
+  color: var(--accent2-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Google Map iframe */
+iframe {
+  max-width: 100%;
+  border: none;
+}
+
+/* Employee Profiles */
+figure {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+}
+
+figure img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
 /* Footer Styles */
 footer {
   display: flex;
@@ -145,50 +194,4 @@ footer .social a img:hover {
       grid-template-columns: 1fr;
   }
 }
-/* Style for Google Map iframe */
-iframe {
-  max-width: 100%;
-  border: none;
-}
 
-/* Form styling */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-input, textarea, button {
-  padding: 10px;
-  font-size: 1rem;
-}
-
-fieldset {
-  border: 1px solid #ccc;
-  padding: 10px;
-}
-
-button {
-  background-color: #007BFF;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-/* Employee profiles */
-figure {
-  display: inline-block;
-  text-align: center;
-  margin: 10px;
-}
-
-figure img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-}
