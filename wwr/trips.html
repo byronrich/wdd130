@@ -3,92 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore our exciting whitewater rafting trips and adventures. Perfect for every skill level!">
     <title>White River Adventures - Trips</title>
-    <link rel="stylesheet" href="rafting.css">
+    <meta name="description" content="Explore exciting whitewater rafting trips and adventures offered by White River Adventures, perfect for all skill levels!">
+    <meta name="author" content="Byron Alexander Richardson">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="images/whiteriver.jpg" alt="White River Adventures Logo">
-        </div>
-        <h1>White River Adventures</h1>
+        <img src="images/whiteriver.jpg" alt="logo" class="logo">
         <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html" aria-current="page">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" style="position: relative;">
-        <img src="images/tripshero.jpg" alt="Trips" style="width: 100%; height: auto;">
-        <h2 class="hero-message" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: var(--accent2-color); background: rgba(0, 0, 0, 0.6); padding: 10px;">Choose Your Adventure!</h2>
-    </section>
-
     <main>
-        <!-- Call to Action -->
-        <section class="cta-contact" style="text-align: center; padding: 20px; margin: 20px auto; background: var(--primary-color); color: var(--accent2-color); border-radius: 5px;">
-            <h2>Have Questions?</h2>
-            <p>Contact us today to plan your next rafting adventure.</p>
-            <a href="contact.html" style="background: var(--accent1-color); padding: 10px 20px; color: var(--accent2-color); text-decoration: none; border-radius: 5px;">Contact Us</a>
+        <h1>Our Rafting Trips</h1>
+        <section class="hero">
+            <img src="images/tripshero.jpg" alt="Trips">
+            <h2>Choose Your Adventure!</h2>
         </section>
 
-        <!-- Trip Details Section -->
-        <section class="trips" style="margin: 20px auto; max-width: 1000px;">
-            <h2 style="text-align: center;">Featured Trips</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 20px;">
+        <section class="cta-contact">
+            <h2>Have Questions?</h2>
+            <p>Contact us today to plan your next rafting adventure.</p>
+            <a href="contact.html">Contact Us</a>
+        </section>
+
+        <section class="trips">
+            <h2>Featured Trips</h2>
+            <div>
                 <div class="trip">
-                    <img src="images/river1.jpg" alt="Rushed Water Rapids" style="width: 100%; border-radius: 5px;">
+                    <img src="images/river1.jpg" alt="Rushed Water Rapids">
                     <h3>Rushed Water Rapids</h3>
                     <p>Thrilling rapids for the adventure seeker.</p>
                 </div>
                 <div class="trip">
-                    <img src="images/river2.jpg" alt="Big Mallard Rapids" style="width: 100%; border-radius: 5px;">
+                    <img src="images/river2.jpg" alt="Big Mallard Rapids">
                     <h3>Big Mallard Adventure</h3>
-                    <p>Intermediate-level rapids and scenic stops.</p>
+                    <p>Intermediate-level rapids with scenic stops.</p>
                 </div>
                 <div class="trip">
-                    <img src="images/river5.jpg" alt="Serene Waters Adventure" style="width: 100%; border-radius: 5px;">
+                    <img src="images/river5.jpg" alt="Serene Waters Adventure">
                     <h3>Serene Waters Adventure</h3>
-                    <p>Calm and relaxing for families and beginners.</p>
+                    <p>Calm and relaxing experience for families and beginners.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Trips Table -->
-        <section class="trips-table" style="margin: 20px auto; max-width: 800px;">
-            <h2 style="text-align: center;">Trip Schedule</h2> <!-- Added heading to fix warning -->
-            <table style="width: 100%; border-collapse: collapse;">
+        <section class="trips-table">
+            <h2>Trip Schedule</h2>
+            <table>
                 <thead>
                     <tr>
-                        <th style="border: 1px solid #ddd; padding: 8px;">Destination</th>
-                        <th style="border: 1px solid #ddd; padding: 8px;">Date</th>
-                        <th style="border: 1px solid #ddd; padding: 8px;">Price</th>
+                        <th>Destination</th>
+                        <th>Date</th>
+                        <th>Price</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td style="border: 1px solid #ddd; padding: 8px;">Rushed Water Rapids</td>
-                        <td style="border: 1px solid #ddd; padding: 8px;">month day, 2025</td>
-                        <td style="border: 1px solid #ddd; padding: 8px;">$120</td>
+                        <td>Rushed Water Rapids</td>
+                        <td>Month day, 2025</td>
+                        <td>$120</td>
                     </tr>
                     <tr>
-                        <td style="border: 1px solid #ddd; padding: 8px;">Big Mallard Adventure</td>
-                        <td style="border: 1px solid #ddd; padding: 8px;">Month day, 2025</td>
-                        <td style="border: 1px solid #ddd; padding: 8px;">$150</td>
+                        <td>Big Mallard Adventure</td>
+                        <td>Month day, 2025</td>
+                        <td>$150</td>
                     </tr>
                     <tr>
-                        <td style="border: 1px solid #ddd; padding: 8px;">Serene Waters Adventure</td>
-                        <td style="border: 1px solid #ddd; padding: 8px;">Month day, 2025</td>
-                        <td style="border: 1px solid #ddd; padding: 8px;">$90</td>
+                        <td>Serene Waters Adventure</td>
+                        <td>Month day, 2025</td>
+                        <td>$90</td>
                     </tr>
                 </tbody>
             </table>
         </section>
     </main>
+
+    <footer>
+        <p>&copy; 2025 | White River Adventures</p>
+        <div class="social">
+            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://instagram.com"><img src="images/instagram.jpg" alt="Instagram"></a>
+        </div>
+    </footer>
 </body>
 </html>
